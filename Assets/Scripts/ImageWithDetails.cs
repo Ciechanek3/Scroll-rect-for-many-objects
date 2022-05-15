@@ -33,6 +33,6 @@ public class ImageWithDetails : MonoBehaviour
     public void RefreshTimer()
     {
         var timeSinceCreation = (DataConverter.Instance.startUpDateTime - creationDateTime).ToString();
-        creationDate.text = timeSinceCreation.Substring(0, timeSinceCreation.IndexOf("."));
+        creationDate.text = timeSinceCreation.Substring(0, timeSinceCreation.LastIndexOf("."));
     }
 }
