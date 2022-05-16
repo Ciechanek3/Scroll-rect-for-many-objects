@@ -978,7 +978,7 @@ MonoBehaviour:
   visibleArea: {fileID: 4722707194587650353}
   uIScrollListPool: {fileID: 0}
   visibleElements: 5
-  offsetElements: 8
+  offsetElements: 10
   itemHeight: 200
   offsetBetweenItems: 5
 --- !u!1 &9010921733609044517
