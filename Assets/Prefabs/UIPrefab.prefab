@@ -562,10 +562,9 @@ MonoBehaviour:
   visibleArea: {fileID: 4722707194587650353}
   uIScrollListPool: {fileID: 0}
   visibleElements: 5
-  offsetElements: 2
+  offsetElements: 6
   itemHeight: 200
   offsetBetweenItems: 5
-  maxElements: 20
 --- !u!1 &9010921733609044517
 GameObject:
   m_ObjectHideFlags: 0

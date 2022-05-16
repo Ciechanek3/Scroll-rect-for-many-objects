@@ -76,7 +76,7 @@ public class UIScrollListController : MonoBehaviour, IBeginDragHandler
     }
     private void UpdateContent()
     {
-        if (GetCurrentTopItemIndex() > 2)
+        if (GetCurrentTopItemIndex() > offsetElements)
         {
             if (lastCreatedElement >= maxElements)
             {
@@ -90,7 +90,7 @@ public class UIScrollListController : MonoBehaviour, IBeginDragHandler
             firstCreatedElement++;
             lastCreatedElement++;
         }
-        else if (GetCurrentTopItemIndex() < 2)
+        else if (GetCurrentTopItemIndex() < offsetElements)
         {
             if (firstCreatedElement <= 0)
             {
