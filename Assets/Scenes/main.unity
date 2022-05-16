@@ -456,6 +456,22 @@ PrefabInstance:
       propertyPath: m_ReferenceResolution.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 4829294300212130447, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 222.4343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829294300212130447, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 124.2058
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829294300212130447, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.2172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829294300212130447, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 85.8971
+      objectReference: {fileID: 0}
     - target: {fileID: 4831450407035670227, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
       propertyPath: m_ChildControlHeight
       value: 0
@@ -477,9 +493,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: offsetElements
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
       propertyPath: uIScrollListPool
       value: 
       objectReference: {fileID: 111170845}
+    - target: {fileID: 6269434635042909806, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_text
+      value: Add images in Assets/Images folder
+      objectReference: {fileID: 0}
     - target: {fileID: 6562839307587175404, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -487,6 +511,54 @@ PrefabInstance:
     - target: {fileID: 6562839307587175404, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnButtonPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325849145411740807, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325849145411740807, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -145.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325849145411740807, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325849145411740807, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -72.786
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664285780256214401, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_text
+      value: This button doesn't work on build, you have to manually open that folder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664285780256214401, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664285780256214401, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664285780256214401, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664285780256214401, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664285780256214401, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664285780256214401, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664285780256214401, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
