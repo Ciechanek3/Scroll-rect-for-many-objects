@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class UIScrollListController : MonoBehaviour
+public class UIScrollListController : MonoBehaviour, IBeginDragHandler
 {
     [Header("ScrollRect")]
     [SerializeField]
@@ -69,6 +69,10 @@ public class UIScrollListController : MonoBehaviour
         scrollRectContent.anchoredPosition = new Vector2(scrollRectContent.anchoredPosition.x, scrollRectContent.anchoredPosition.y + dragDelta);
         UpdateContent();
         contentPosition = visibleArea.anchoredPosition.y;
+    }
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+       contentPosition = visibleArea.anchoredPosition.y;
     }
     private void UpdateContent()
     {
