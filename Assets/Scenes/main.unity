@@ -493,10 +493,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
-      propertyPath: offsetElements
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
       propertyPath: uIScrollListPool
       value: 
       objectReference: {fileID: 111170845}
