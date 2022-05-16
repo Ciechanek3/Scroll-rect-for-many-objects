@@ -453,24 +453,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
-      propertyPath: itemHeight
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
       propertyPath: maxElements
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
       propertyPath: dataConverter
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
-      propertyPath: offsetElements
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
-      propertyPath: visibleElements
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5096030472136604467, guid: e12b83619d0f0b3468a85805799fb6a7, type: 3}
       propertyPath: uIScrollListPool
