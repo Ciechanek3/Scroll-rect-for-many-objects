@@ -17,6 +17,7 @@ public class DataConverter : MonoBehaviour
     private DirectoryInfo dir;
 
     public int Info { get => info.Length; }
+    public DirectoryInfo Dir { get => dir; }
 
     private void Awake()
     {
@@ -38,14 +39,18 @@ public class DataConverter : MonoBehaviour
     public void CreateDataList()
     {
         dir = new DirectoryInfo("Assets/Images/");
-        info = dir.GetFiles("*.png");
+        info = Dir.GetFiles("*.png");
     }
     public ImageData GetSpecificElement(int index)
-    {
-        Texture2D texture = new Texture2D(1, 1);
+    { 
+        Texture2D texture = new Texture2D(200, 200);
+        //WWW www = new WWW("file://" + info[index].FullName);
+        //texture = www.texture;
+        StartCoroutine(GetTexture(result => texture = result, info[index].FullName));
         byte[] bytes = File.ReadAllBytes(info[index].FullName);
+        ImageConversion.LoadImage(texture, bytes, false);
+        //texture.LoadImage(bytes);
         var name = info[index].Name.Substring(0, info[index].Name.IndexOf("."));
-        texture.LoadImage(bytes);
         Sprite sprite = Sprite.Create(texture, new Rect(new Vector2(0, 0), new Vector2(texture.width, texture.height)), new Vector2(0, 0), 1, 0, SpriteMeshType.FullRect);
         return new ImageData(sprite, name, info[index].CreationTime);
     }
@@ -54,5 +59,14 @@ public class DataConverter : MonoBehaviour
         startUpDateTime = DateTime.Now;
         CreateDataList();
         OnRefreshButtonPressed?.Invoke();
+    }
+    IEnumerator GetTexture(Action<Texture2D> callTexture, string path)
+    {
+        UnityWebRequest uwr = UnityWebRequestTexture.GetTexture("file:///" + path);
+
+        yield return uwr.SendWebRequest();
+
+        Texture2D myTexture = ((DownloadHandlerTexture)uwr.downloadHandler).texture;
+        callTexture(myTexture);
     }
 }

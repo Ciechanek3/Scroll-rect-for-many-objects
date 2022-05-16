@@ -14,6 +14,8 @@ public class ImageWithDetails : MonoBehaviour
 
     private DateTime creationDateTime;
 
+    public Image Image { get => image; }
+
     private void OnEnable()
     {
         DataConverter.Instance.OnRefreshButtonPressed += RefreshTimer;
