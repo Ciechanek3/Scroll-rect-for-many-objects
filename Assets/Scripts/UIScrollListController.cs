@@ -151,6 +151,6 @@ public class UIScrollListController : MonoBehaviour
             lastCreatedElement = 0;
         }
         visibleArea.sizeDelta = new Vector2(visibleArea.sizeDelta.x, maxElements * (itemHeight + offsetBetweenItems));
-        //RefreshCurrentElements();
+        RefreshCurrentElements();
     }
 }
