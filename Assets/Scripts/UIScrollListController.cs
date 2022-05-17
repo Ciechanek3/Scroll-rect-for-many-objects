@@ -152,7 +152,7 @@ public class UIScrollListController : MonoBehaviour, IBeginDragHandler
             firstCreatedElement = 0;
             lastCreatedElement = 0;
         }
-        visibleArea.sizeDelta = new Vector2(visibleArea.sizeDelta.x, maxElements * (itemHeight + offsetBetweenItems));
+        visibleArea.sizeDelta = new Vector2(visibleArea.sizeDelta.x, maxElements * (itemHeight) * 1.25f);
         RefreshCurrentElements();
     }
 }
