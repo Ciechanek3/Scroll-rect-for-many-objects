@@ -57,13 +57,13 @@ public class UIScrollListController : MonoBehaviour, IBeginDragHandler
             startingElements = maxElements;
         }
         uIScrollListPool.SetupStartingElements(startingElements, scrollRectContent.transform);
-        visibleArea.sizeDelta = new Vector2(visibleArea.sizeDelta.x, maxElements * (itemHeight + offsetBetweenItems));
+        visibleArea.sizeDelta = new Vector2(visibleArea.sizeDelta.x, maxElements * (itemHeight) * 1.25f);
         lastCreatedElement = startingElements;
     }
 
     private void ManageScrollRectView(Vector2 dragNormalizePos)
     {
-        float dragDelta = visibleArea.anchoredPosition.y - contentPosition;
+        float dragDelta = (visibleArea.anchoredPosition.y - contentPosition) * 0.8f;
         scrollRectContent.anchoredPosition = new Vector2(scrollRectContent.anchoredPosition.x, scrollRectContent.anchoredPosition.y + dragDelta);
         UpdateContent();
         contentPosition = visibleArea.anchoredPosition.y;
